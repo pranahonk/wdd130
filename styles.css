@@ -1,0 +1,31 @@
+aside {
+    width: 80%;
+    margin: 20px auto;
+    border: 2px solid #ccc;
+    padding: 15px;
+    background-color: #f9f9f9;
+    color: #333;
+}
+
+aside img {
+    width: 200px;
+    height: auto;
+    display: block;
+    margin: 10px auto;
+}
+
+main img {
+    width: 150px;
+    height: auto;
+}
+
+p {
+    padding: 0;
+}
+
+footer {
+    margin-top: 20px;
+    border-top: 2px solid #ccc;
+    text-align: center;
+    padding: 10px 0;
+}
