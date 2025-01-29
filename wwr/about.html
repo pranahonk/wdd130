@@ -10,38 +10,63 @@
 <body>
 
     <header>
-        <img src="images/logo.png" alt="White Water Rafting Logo">
-        <nav>
-            <a href="index.html">Home</a>
-            <a href="about.html">About Us</a>
-            <a href="trips.html">Trips</a>
-            <a href="contact.html">Contact Us</a>
-        </nav>
+        <div class="container">
+            <img src="images/logo.png" alt="White Water Rafting Logo" class="logo">
+            <nav>
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="about.html">About Us</a></li>
+                    <li><a href="trips.html">Trips</a></li>
+                    <li><a href="contact.html">Contact Us</a></li>
+                </ul>
+            </nav>
+        </div>
     </header>
 
     <main>
-        <div class="hero">
-            <img src="images/hero.jpg" alt="Rafting Adventure">
+        <!-- Hero Section -->
+        <section class="hero">
             <h1>White Water Rafting</h1>
             <article>
                 <img src="images/happy_client.png" alt="Happy Client">
                 <p>Experience the thrill of adventure with White Water Rafting. Our mission is to provide a safe, exhilarating, and unforgettable journey on the river.</p>
             </article>
-        </div>
-
-        <section class="history">
-            <h2>History</h2>
-            <p>Founded in 1998, White Water Rafting has been leading adventure seekers through the most exciting river rapids in the region.</p>
         </section>
 
+        <!-- History Section -->
+        <section class="history">
+            <div class="container">
+                <h2>History</h2>
+                <p>Founded in 1998, White Water Rafting has been leading adventure seekers through the most exciting river rapids in the region.</p>
+            </div>
+        </section>
+
+        <!-- Adventure Section -->
         <section class="adventure">
-            <h2>Adventure Awaits You!</h2>
-            <div class="gallery">
-                <img src="images/rafting1.png" alt="Rafting Image 1">
-                <img src="images/rafting2.png" alt="Rafting Image 2">
-                <img src="images/rafting3.png" alt="Rafting Image 3">
-                <img src="images/rafting4.png" alt="Rafting Image 4">
-                <img src="images/rafting5.png" alt="Rafting Image 5">
+            <div class="container">
+                <h2>Adventure Awaits You!</h2>
+                <div class="gallery">
+                    <figure>
+                        <img src="images/rafting1.png" alt="Rafting Image 1">
+                        <figcaption>Los Dientes del Diablo</figcaption>
+                    </figure>
+                    <figure>
+                        <img src="images/rafting2.png" alt="Rafting Image 2">
+                        <figcaption>Big Mallard</figcaption>
+                    </figure>
+                    <figure>
+                        <img src="images/rafting3.png" alt="Rafting Image 3">
+                        <figcaption>Half Day Adventure</figcaption>
+                    </figure>
+                    <figure>
+                        <img src="images/rafting4.png" alt="Rafting Image 4">
+                        <figcaption>Wild Rapids</figcaption>
+                    </figure>
+                    <figure>
+                        <img src="images/rafting5.png" alt="Rafting Image 5">
+                        <figcaption>Rapid Falls</figcaption>
+                    </figure>
+                </div>
             </div>
         </section>
     </main>

@@ -8,55 +8,68 @@ body {
 
 /* Header */
 header {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
     background-color: #A3C4F3;
     padding: 20px;
 }
 
-header img {
+.container {
+    display: grid;
+    grid-template-columns: auto 1fr;
+    align-items: center;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.logo {
     width: 100px;
 }
 
-nav a {
+nav ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+    justify-content: flex-end;
+}
+
+nav ul li {
+    margin-left: 20px;
+}
+
+nav ul li a {
     text-decoration: none;
     color: black;
     padding: 10px 20px;
+    font-weight: bold;
 }
 
 /* Hero Section */
 .hero {
     position: relative;
+    background: url('../images/hero.jpg') no-repeat center center/cover;
     text-align: center;
-    color: black;
-}
-
-.hero img {
-    width: 100%;
-    height: auto;
+    color: white;
+    height: 400px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
 }
 
 .hero h1 {
-    position: absolute;
-    top: 20%;
-    left: 50%;
-    transform: translate(-50%, -50%);
     font-size: 2.5em;
     font-weight: bold;
-    color: #fff;
+    background: rgba(0, 0, 0, 0.6);
+    padding: 10px 20px;
+    border-radius: 10px;
 }
 
 .hero article {
-    position: absolute;
-    bottom: 10%;
-    left: 50%;
-    transform: translateX(-50%);
-    width: 50%;
     background: rgba(255, 255, 255, 0.8);
     padding: 20px;
     border-radius: 10px;
     text-align: left;
+    width: 50%;
 }
 
 .hero article img {
@@ -68,22 +81,33 @@ nav a {
 /* Sections */
 .history, .adventure {
     text-align: center;
-    padding: 20px;
+    padding: 40px 20px;
     background: white;
     margin: 20px;
+    border-radius: 10px;
 }
 
+/* Gallery */
 .gallery {
     display: flex;
     justify-content: center;
-    gap: 10px;
+    gap: 20px;
     flex-wrap: wrap;
+}
+
+.gallery figure {
+    text-align: center;
 }
 
 .gallery img {
     width: 150px;
     height: auto;
     border-radius: 5px;
+    transition: transform 0.3s ease;
+}
+
+.gallery img:hover {
+    transform: scale(1.1);
 }
 
 /* Footer */
@@ -97,10 +121,20 @@ footer p {
     margin: 5px 0;
 }
 
+.social-media {
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+    margin-top: 10px;
+}
+
 .social-media img {
     width: 30px;
-    margin: 0 10px;
-    text-decoration: none;
+    transition: transform 0.3s ease;
+}
+
+.social-media img:hover {
+    transform: scale(1.1);
 }
 
 .social-media a {
