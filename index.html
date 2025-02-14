@@ -1,41 +1,87 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
+<head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="Your Name - WDD130 - Home Page. Learning HTML and CSS for web development.">
-    <meta name="author" content="Your Name">
-    <title>Prana Apsara Wijaya | WDD 130</title>
-    <link rel="stylesheet" href="styles.css">
+    <meta name="description" content="Experience the best white water rafting adventures with us! Explore our exciting trips and book your next adventure.">
+    <title>Home - White Water Rafting</title>
+    <link rel="stylesheet" href="wwr/styles/rafting.css">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap" rel="stylesheet">
 </head>
-  <body>
+<body>
+
     <header>
-      <nav>
-        <a href="#">Home</a>
-        <a href="wwr/">Rafting Website</a>
-      </nav>
+        <img src="wwr/images/logo.png" alt="White Water Rafting Logo" class="logo">
+        <nav>
+            <ul>
+                <li><a href="wwr/index.html" class="active">Home</a></li>
+                <li><a href="wwr/about.html">About Us</a></li>
+                <li><a href="wwr/trips.html">Trips</a></li>
+                <li><a href="wwr/contact.html">Contact Us</a></li>
+            </ul>
+        </nav>
     </header>
+
     <main>
-      <h1>Prana Apsara Wijaya | WDD 130</h1>
-      <img
-        src="images/profile.jpg"
-        alt="Hello, my name is Prana Apsara Wijaya"
-        width="200"
-      >
-      <p>
-        Hello! My name is Prana Apsara Wijaya. I am from Jakarta.
-        I enjoy football. I’m excited to learn web development!
-      </p>
+        <!-- Hero Section -->
+        <section class="hero">
+            <img src="wwr/images/hero.jpg" alt="Rafting adventure on a wild river" class="hero-image">
+            <div class="hero-text">
+                <h1>Adventure Awaits You!</h1>
+                <p>Experience the thrill of white water rafting in the most scenic rivers.</p>
+            </div>
+        </section>
+
+        <!-- Call to Action -->
+        <section class="cta">
+            <h2>Ready for an Adventure?</h2>
+            <p>Explore our thrilling rafting trips and book your next unforgettable experience.</p>
+            <a href="wwr/trips.html" class="btn">View Trips</a>
+        </section>
+
+        <!-- Newsletter Sign-up -->
+        <section class="newsletter">
+            <h2>Join Our Adventure Community</h2>
+            <p>Sign up for exclusive offers, adventure tips, and the latest updates.</p>
+            <form action="#" method="post">
+                <label for="name">Full Name:</label>
+                <input type="text" id="name" name="name" required>
+
+                <label for="email">Email Address:</label>
+                <input type="email" id="email" name="email" required>
+
+                <button type="submit" class="btn">Subscribe</button>
+            </form>
+        </section>
+
+        <!-- Grid Layout Section -->
+        <section class="grid-layout">
+            <div class="grid-item">
+                <img src="wwr/images/rafting1.jpg" alt="Rafting through a canyon">
+                <h3>Scenic Adventures</h3>
+                <p>Enjoy breathtaking landscapes as you navigate the rapids.</p>
+            </div>
+            <div class="grid-item">
+                <img src="wwr/images/rafting2.jpg" alt="Group rafting teamwork">
+                <h3>Teamwork & Fun</h3>
+                <p>Bond with your group while tackling exciting challenges.</p>
+            </div>
+            <div class="grid-item">
+                <img src="wwr/images/rafting3.jpg" alt="Rafting safety briefing">
+                <h3>Safety First</h3>
+                <p>Our expert guides ensure a safe and thrilling experience.</p>
+            </div>
+        </section>
     </main>
-    <aside>
-      <h2>Indonesia</h2>
-      <img src="images/indonesia.jpeg" alt="A scenic view of Indonesia">
-      <p>Indonesia is an archipelago known for its diverse culture, rich history, and stunning landscapes.</p>
-  </aside>
+
     <footer>
-      <p>
-        &copy; 2025 | 🌟 Prana Apsara Wijaya | 🌍 Jakarta, Indonesia
-      </p>
+        <p>&copy; 2025 White Water Rafting | Designed by Your Name</p>
+        <div class="social-media">
+            <a href="#"><img src="wwr/images/facebook.png" alt="Facebook"></a>
+            <a href="#"><img src="wwr/images/twitter.png" alt="Twitter"></a>
+            <a href="#"><img src="wwr/images/instagram.png" alt="Instagram"></a>
+        </div>
     </footer>
-  </body>
+
+</body>
 </html>
