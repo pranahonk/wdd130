@@ -1,9 +1,42 @@
+/* CSS Variables */
+:root {
+  --primary-color: #2E86AB; /* ocean blue */
+  --secondary-color: #A23B72; /* deep pink */
+  --accent1-color: #F18F01; /* bright orange */
+  --accent2-color: #C73E1D; /* red orange */
+  --heading-font: "Georgia", "Times New Roman", serif;
+  --body-font: Arial, Helvetica, sans-serif;
+}
+
+/* Universal Reset */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
 /* Global Styles */
 body {
-    font-family: 'Montserrat', sans-serif;
-    margin: 0;
-    padding: 0;
-    background-color: #f4f4f4;
+  font-family: var(--body-font);
+  color: var(--accent2-color);
+}
+
+/* Page Layout */
+header, main, footer {
+  width: 840px;
+  margin: 0 auto;
+}
+
+/* Headings */
+h1, h2 {
+  font-family: var(--heading-font);
+  color: var(--primary-color);
+}
+
+/* Basic Element Spacing */
+nav, p, section, article {
+  margin: 16px;
+  padding: 8px;
 }
 
 /* Header */
@@ -11,7 +44,8 @@ header {
     display: grid;
     grid-template-columns: auto 1fr;
     align-items: center;
-    background-color: #A3C4F3;
+    background-color: var(--primary-color);
+    color: white;
     padding: 15px 20px;
 }
 
@@ -46,30 +80,41 @@ nav a.active {
 /* Hero Section */
 .hero {
     position: relative;
-    width: 100%;
 }
 
-.hero-image {
+.hero img {
+    display: block;
     width: 100%;
-    height: 400px;
-    object-fit: cover;
+    height: auto;
 }
 
-.hero-text {
+.hero h1 {
     position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
+    top: 20px;
+    width: 100%;
+    padding: 16px;
     text-align: center;
-    color: white;
-    background: rgba(0, 0, 0, 0.6);
-    padding: 20px;
-    border-radius: 10px;
+    opacity: 0.7;
+    background-color: var(--accent1-color);
+    color: #fff;
 }
 
-.hero-text h1 {
-    font-size: 2.5em;
-    margin: 0;
+.hero article {
+    position: absolute;
+    bottom: 20px;
+    right: 20px;
+    background-color: rgba(255, 255, 255, 0.9);
+    padding: 16px;
+    border-radius: 8px;
+    max-width: 300px;
+}
+
+.hero article img {
+    float: right;
+    width: 125px;
+    margin: 0 0 15px 15px;
+    border: 2px solid var(--primary-color);
+    border-radius: 8px;
 }
 
 /* Call to Action */
@@ -255,7 +300,8 @@ footer p {
     width: 30px;
 }
 
-.social-media a {
+/* Social Media Links */
+.socialmedia a {
     text-decoration: none;
 }
 
